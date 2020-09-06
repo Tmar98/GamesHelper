@@ -1,0 +1,17 @@
+C:\Users\user\source\repos\GamesHelper\GamesHelper\obj\Debug\GamesHelper.csprojAssemblyReference.cache
+C:\Users\user\source\repos\GamesHelper\GamesHelper\obj\Debug\MainWindow.g.cs
+C:\Users\user\source\repos\GamesHelper\GamesHelper\obj\Debug\App.g.cs
+C:\Users\user\source\repos\GamesHelper\GamesHelper\obj\Debug\GamesHelper_MarkupCompile.cache
+C:\Users\user\source\repos\GamesHelper\GamesHelper\obj\Debug\GamesHelper_MarkupCompile.lref
+C:\Users\user\source\repos\GamesHelper\GamesHelper\bin\Debug\GamesHelper.exe.config
+C:\Users\user\source\repos\GamesHelper\GamesHelper\bin\Debug\GamesHelper.exe
+C:\Users\user\source\repos\GamesHelper\GamesHelper\bin\Debug\GamesHelper.pdb
+C:\Users\user\source\repos\GamesHelper\GamesHelper\obj\Debug\MainWindow.baml
+C:\Users\user\source\repos\GamesHelper\GamesHelper\obj\Debug\GamesHelper.g.resources
+C:\Users\user\source\repos\GamesHelper\GamesHelper\obj\Debug\GamesHelper.Properties.Resources.resources
+C:\Users\user\source\repos\GamesHelper\GamesHelper\obj\Debug\GamesHelper.csproj.GenerateResource.cache
+C:\Users\user\source\repos\GamesHelper\GamesHelper\obj\Debug\GamesHelper.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\GamesHelper\GamesHelper\obj\Debug\GamesHelper.exe
+C:\Users\user\source\repos\GamesHelper\GamesHelper\obj\Debug\GamesHelper.pdb
+C:\Users\user\source\repos\GamesHelper\GamesHelper\obj\Debug\GameType.g.cs
+C:\Users\user\source\repos\GamesHelper\GamesHelper\obj\Debug\GameType.baml

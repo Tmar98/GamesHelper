@@ -1,0 +1,18 @@
+﻿<Window x:Class="GamesHelper.GameType"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GamesHelper"
+        mc:Ignorable="d"
+        Title="GameType" Height="100" Width="200" Closing="Window_Closing">
+    <DockPanel VerticalAlignment="Center">
+        <DockPanel DockPanel.Dock="Top" VerticalAlignment="Center" Margin="20,0,0,10">
+            <RadioButton x:Name="One" DockPanel.Dock="Top">Индивидуальная игра</RadioButton>
+            <RadioButton x:Name="Groupe" DockPanel.Dock="Bottom">Груповая игра</RadioButton>
+        </DockPanel>
+        <StackPanel >
+            <Button Click="Button_Click">Выбрать</Button>
+        </StackPanel>
+    </DockPanel>
+</Window>
