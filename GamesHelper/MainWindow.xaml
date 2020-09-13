@@ -6,62 +6,68 @@
         xmlns:local="clr-namespace:GamesHelper"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid x:Name="Parent_Grid" Margin="10,15">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="200" />
-        </Grid.ColumnDefinitions>
-        <ListBox x:Name="List_Direction_UI" ></ListBox> <!--список направлений-->
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem x:Name="MainMenu" Header="Главная" Click="MainMenu_Click"></MenuItem>
+            <MenuItem Width="65" IsEnabled="True"></MenuItem>
+            <MenuItem x:Name="Create" Header="Создать" Click="Create_Click" ></MenuItem>
+        </Menu>
+        <Grid x:Name="Parent_Grid" Margin="10,15">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="200" />
+            </Grid.ColumnDefinitions>
+            <ListBox x:Name="List_Direction_UI" />
+            <!--список направлений-->
 
-        <ListBox x:Name="List_Task_UI" Visibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Padding="0,0,30,0" >
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal"  >
-                        <TextBlock TextWrapping="Wrap" Width="{Binding ActualWidth, ElementName=List_Task_UI}">
-                            <TextBlock.Text>
-                                <MultiBinding StringFormat="{}{0} {1}">
-                                    <Binding Path="Id" />
-                                    <Binding Path="TaskName" />
-                                </MultiBinding>
-                            </TextBlock.Text>
-                        </TextBlock>
-                    </StackPanel>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>  <!--список задач-->
+            <ListBox x:Name="List_Task_UI" Visibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Disabled"  >
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal"  >
+                            <TextBlock TextWrapping="Wrap" Width="{Binding ActualWidth, ElementName=List_Task_UI}" Padding="0,0,30,0">
+                                <TextBlock.Text>
+                                    <MultiBinding StringFormat="{}{0} {1}">
+                                        <Binding Path="List_Id" />
+                                        <Binding Path="TaskName" />
+                                    </MultiBinding>
+                                </TextBlock.Text>
+                            </TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>  <!--список задач-->
         
-        <ListBox x:Name="List_Game_UI" Visibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal"  >
-                        <TextBlock TextWrapping="Wrap" Width="{Binding ActualWidth, ElementName=List_Game_UI}" Padding="0,0,30,0">
-                            <Run Text="{Binding Path=Number}" />
-                            <Run Text="{Binding Path=Name}" FontWeight="Bold"/>
-                            <Run Text="{Binding Path=Description}" />
-                            <Run Text="{Binding Path=Toys}" />
+            <ListBox x:Name="List_Game_UI" Visibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal"  >
+                            <TextBlock TextWrapping="Wrap" Width="{Binding ActualWidth, ElementName=List_Game_UI}" Padding="0,0,30,0">
+                                <Run Text="{Binding Path=Number}" />
+                                <Run Text="{Binding Path=Name}" FontWeight="Bold"/>
+                                <Run Text="{Binding Path=Description}" />
+                                <Run Text="{Binding Path=Toys}" />
 
-                        </TextBlock>
-                    </StackPanel>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+                            </TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
         
         
-        <Grid x:Name="Buttons" Height="{Binding ActualHeight, ElementName=Parent_Grid}" Grid.Column="1" VerticalAlignment="Center" >
-            <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
+            <Grid x:Name="Buttons" Height="{Binding ActualHeight, ElementName=Parent_Grid}" Grid.Column="1" VerticalAlignment="Center" >
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
             
-            <Button x:Name="Butt_WorkDirection" Height="100" Width="100" Click="Butt_WorkDirection_Click" >Выбрать</Button> <!--кнопка выбора направления-->
-            <Button x:Name="Butt_Task" Visibility="Hidden" Height="100" Width="100" Click="Butt_Task_Click" >Выбрать</Button> <!--кнопка выбора задачи-->
-            <Button x:Name="Butt_Games" Visibility="Hidden" Height="100" Width="100" >Выбрать</Button> <!--кнопка выбора игры-->
+                <Button x:Name="Butt_WorkDirection" Height="100" Width="100" Click="Butt_WorkDirection_Click" >Выбрать</Button> <!--кнопка выбора направления-->
+                <Button x:Name="Butt_Task" Visibility="Hidden" Height="100" Width="100" Click="Butt_Task_Click" >Выбрать</Button> <!--кнопка выбора задачи-->
+                <Button x:Name="Butt_Games" Visibility="Hidden" Height="100" Width="100" Click="Butt_Games_Click">Выбрать</Button> <!--кнопка выбора игры-->
             
-            <Button x:Name="Butt_GametoList" Visibility="Hidden" Grid.Row="1" Height="100" Width="100" Click="Butt_GametoList_Click" > <!--кнопка добавления игры в список к записи--> 
-                <TextBlock TextWrapping="Wrap" TextAlignment="Center"> Добавить игру в список </TextBlock> 
-            </Button>
+                
+            </Grid>
+
+
         </Grid>
-
-
-    </Grid>
+    </DockPanel>
 </Window>

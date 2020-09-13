@@ -15,3 +15,5 @@ C:\Users\user\source\repos\GamesHelper\GamesHelper\obj\Debug\GamesHelper.exe
 C:\Users\user\source\repos\GamesHelper\GamesHelper\obj\Debug\GamesHelper.pdb
 C:\Users\user\source\repos\GamesHelper\GamesHelper\obj\Debug\GameType.g.cs
 C:\Users\user\source\repos\GamesHelper\GamesHelper\obj\Debug\GameType.baml
+C:\Users\user\source\repos\GamesHelper\GamesHelper\obj\Debug\Document_Options.g.cs
+C:\Users\user\source\repos\GamesHelper\GamesHelper\obj\Debug\Document_Options.baml

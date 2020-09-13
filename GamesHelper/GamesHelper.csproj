@@ -59,12 +59,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Document_Options.xaml.cs">
+      <DependentUpon>Document_Options.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Game.cs" />
     <Compile Include="GameType.xaml.cs">
       <DependentUpon>GameType.xaml</DependentUpon>
     </Compile>
     <Compile Include="Task.cs" />
     <Compile Include="WorkDirection.cs" />
+    <Page Include="Document_Options.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GameType.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -10,6 +10,7 @@ namespace GamesHelper
     public class Task
     {
         public int Id { get; set; }
+        public int List_Id { get; set; }
         public int Relations { get; set; }
         public string TaskName { get; set; }
 

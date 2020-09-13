@@ -19,7 +19,7 @@ namespace GamesHelper
     /// </summary>
     public partial class GameType : Window
     {
-        private bool Exit = false;
+        private bool Exit = false;        
         public GameType()
         {
             InitializeComponent();
@@ -36,16 +36,13 @@ namespace GamesHelper
                     Exit = true;
                     this.Close();
                 }
-                else if (Groupe.IsChecked.Value)
+                else
                 {
                     main.GameType_String = "гр";
                     Exit = true;
                     this.Close();
                 }
-                else
-                {
-                    MessageBox.Show("Выберите тип игры");
-                }
+    
             }
         }
 

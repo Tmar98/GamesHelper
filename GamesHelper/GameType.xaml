@@ -8,7 +8,7 @@
         Title="GameType" Height="100" Width="200" Closing="Window_Closing">
     <DockPanel VerticalAlignment="Center">
         <DockPanel DockPanel.Dock="Top" VerticalAlignment="Center" Margin="20,0,0,10">
-            <RadioButton x:Name="One" DockPanel.Dock="Top">Индивидуальная игра</RadioButton>
+            <RadioButton x:Name="One" DockPanel.Dock="Top" IsChecked="True">Индивидуальная игра</RadioButton>
             <RadioButton x:Name="Groupe" DockPanel.Dock="Bottom">Груповая игра</RadioButton>
         </DockPanel>
         <StackPanel >
